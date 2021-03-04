@@ -28,7 +28,8 @@ int main()
 {
   int  IloscKodow = 10;
   int  Rozmiar = IloscKodow * sizeof(int); /* Zmiana znaku na int spowodowana innym rozmiarem stalych znakowych dla C++ */
-                                           /* Zmiany dokonane w emacs spowodowane zlym wyswietlaniem polskich znakow w VSCode, program dziala i kompiluje sie dla kompilatora C++ , dla gcc dziala niepoprawnie */
+                                           /* Zmiany dokonane w emacs spowodowane zlym wyswietlaniem polskich znakow w VSCode,*/
+                                           /* program dziala i kompiluje sie dla kompilatora C++ , dla gcc dziala poprawnie na serwerze diablo ( na prywatnym jest segmentation fault ) */
   int  *TabKodow = (int*)malloc(Rozmiar);
   char *TabZnakow = (char*)malloc(IloscKodow*sizeof(char)); 
   char *Napis = strdup("Cze¶æ ¦wiecie!!! ¯yczê mi³ego dnia.");
