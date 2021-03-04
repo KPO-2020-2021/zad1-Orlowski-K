@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-double Dodaj();
+double Dodaj(double,double); /* Pelna deklaracja funkcji dla C++, w C nie trzeba tego robic */
 
 
 int main( )
